@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The origin is to the right2</title>
+    <style>
+        .btn {
+    position: relative;
+    min-width: 160px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.btn span {
+    color: #FFFFFF;
+    mix-blend-mode: difference;
+}
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    height: 100%;
+    border-radius: 50px;
+    background: black;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn:hover:before {
+  background: black;
+  width: 100%;
+}
+.d3{
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px auto;
+}
+    </style>
+</head>
+<body>
+    <div class="d3">
+        <div class="d1">
+            <h1 class="h1">
+                <center>
+                    The origin is to the right2
+                    <br>
+                    css-hover
+                </center>
+            </h1>
+        </div>
+        <div class="d2">
+            <button class="btn">
+                <span>Button</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
